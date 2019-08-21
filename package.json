@@ -5,6 +5,16 @@
     "main": "index.js",
     "types": "index.d.ts",
     "license": "MIT",
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "LICENSE",
+        "utils.js",
+        "vendors.js"
+    ],
+    "dependencies": {
+        "@types/node": "8"
+    },
     "devDependencies": {
         "@types/jest": "^24.0.17",
         "jest": "^24.8.0",
