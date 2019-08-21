@@ -1,7 +1,7 @@
 {
-    "name": "lib-name",
+    "name": "ci-info-next",
     "version": "0.0.0",
-    "description": "Lib Description",
+    "description": "Get details of the current CI environment. Heavily inspired by https://github.com/watson/ci-info-next",
     "main": "index.js",
     "types": "index.d.ts",
     "license": "MIT",
@@ -32,7 +32,7 @@
         "url": "https://github.com/niktekusho/"
     },
     "bugs": {
-        "url": "https://github.com/niktekusho/lib-name/issues"
+        "url": "https://github.com/niktekusho/ci-info-next/issues"
     },
     "contributors": [
         {
@@ -40,9 +40,9 @@
             "url": "https://github.com/niktekusho/"
         }
     ],
-    "homepage": "https://github.com/niktekusho/lib-name#readme",
+    "homepage": "https://github.com/niktekusho/ci-info-next#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/niktekusho/lib-name.git"
+        "url": "git+https://github.com/niktekusho/ci-info-next.git"
     }
 }

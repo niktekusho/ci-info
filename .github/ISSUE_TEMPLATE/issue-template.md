@@ -9,7 +9,7 @@ assignees: niktekusho
 
 Thank you for reporting an issue.
 <!--
-This issue tracker is for bugs and issues found within the project "lib-name".
+This issue tracker is for bugs and issues found within the project "ci-info-next".
 -->
 
 # What are you reporting?
@@ -27,13 +27,13 @@ Please fill in as much of the template below as you're able.
 Node version: the output of `node -v`
 NPM/Yarn version: output of `npm -v` or `yarn -v`
 Platform: the output of `uname -a` (UNIX), or version and 32 or 64-bit (Windows) (output of `winver` is very much appreciated!)
-lib-name version: which version of this library are you using (take a look at your `package.json`)
+ci-info-next version: which version of this library are you using (take a look at your `package.json`)
 -->
 
 * **Node version**:
 * **NPM/Yarn version**:
 * **Platform**:
-* **lib-name version**:
+* **ci-info-next version**:
 
 # Issue description
 <!-- Describe here your problem. -->

@@ -1,8 +1,8 @@
-# lib-name
+# ci-info-next
 
-<!-- ![](https://img.shields.io/github/license/niktekusho/lib-name.svg) [![](https://img.shields.io/npm/v/lib-name.svg)](https://www.npmjs.com/package/lib-name) [![Build Status](https://travis-ci.org/niktekusho/lib-name.svg?branch=master)](https://travis-ci.org/niktekusho/lib-name) [![](https://img.shields.io/node/v/lib-name.svg)](https://www.npmjs.com/package/lib-name) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Maintainability](https://api.codeclimate.com/v1/badges/744538fb7227c1a86bea/maintainability)](https://codeclimate.com/github/niktekusho/lib-name/maintainability) [![](https://img.shields.io/bundlephobia/minzip/lib-name.svg)](https://bundlephobia.com/result?p=lib-name) -->
+<!-- ![](https://img.shields.io/github/license/niktekusho/ci-info-next.svg) [![](https://img.shields.io/npm/v/ci-info-next.svg)](https://www.npmjs.com/package/ci-info-next) [![Build Status](https://travis-ci.org/niktekusho/ci-info-next.svg?branch=master)](https://travis-ci.org/niktekusho/ci-info-next) [![](https://img.shields.io/node/v/ci-info-next.svg)](https://www.npmjs.com/package/ci-info-next) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Maintainability](https://api.codeclimate.com/v1/badges/744538fb7227c1a86bea/maintainability)](https://codeclimate.com/github/niktekusho/ci-info-next/maintainability) [![](https://img.shields.io/bundlephobia/minzip/ci-info-next.svg)](https://bundlephobia.com/result?p=ci-info-next) -->
 
-> Lib Description
+> Get details of the current CI environment. Heavily inspired by https://github.com/watson/ci-info-next
 
 ## Installation
 
@@ -11,13 +11,13 @@
 In your console, run the following command:
 
 ```sh
-$ npm install lib-name
+$ npm install ci-info-next
 ```
 
 You can also use `yarn` (like we do in this project):
 
 ```sh
-$ yarn add lib-name
+$ yarn add ci-info-next
 ```
 
 ## Usage
@@ -32,4 +32,4 @@ You can find usage examples in the [examples](examples/) directory.
 
 ## Related
 
-<!-- -   [CLI application](https://github.com/niktekusho/lib-name-cli). -->
+<!-- -   [CLI application](https://github.com/niktekusho/ci-info-next-cli). -->

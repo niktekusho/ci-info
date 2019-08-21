@@ -15,7 +15,7 @@ This project has a [Code of Conduct](./CODE_OF_CONDUCT.md) to which all contribu
 
 ## Issues
 
-The [Issues](https://github.com/niktekusho/lib-name/issues) section collects questions, bug reports and feature requests.
+The [Issues](https://github.com/niktekusho/ci-info-next/issues) section collects questions, bug reports and feature requests.
 We use [GitHub Issues](https://guides.github.com/features/issues/) to track issues in this project.
 For any issue, there are fundamentally three ways you can contribute:
 
@@ -27,14 +27,14 @@ For any issue, there are fundamentally three ways you can contribute:
 
    creating a new issue is the way to report it (remember to search before though 😉);
 2. you can also help either by providing supporting details (a test case that demonstrates a bug) or providing suggestions on how to address the issue;
-3. and of course you can help fix issues either by demonstrating that the issue reported is not a problem anymore or by opening a Pull Request that changes some bit of something in `niktekusho/lib-name` in a concrete and reviewable manner.
+3. and of course you can help fix issues either by demonstrating that the issue reported is not a problem anymore or by opening a Pull Request that changes some bit of something in `niktekusho/ci-info-next` in a concrete and reviewable manner.
 
-When opening a new issue in the `niktekusho/lib-name` issue tracker, you should fill in a basic template (like the one below).
+When opening a new issue in the `niktekusho/ci-info-next` issue tracker, you should fill in a basic template (like the one below).
 
 ```markdown
 Thank you for reporting an issue.
 <!--
-This issue tracker is for bugs and issues found within the project "lib-name".
+This issue tracker is for bugs and issues found within the project "ci-info-next".
 -->
 
 # What are you reporting?
@@ -52,13 +52,13 @@ Please fill in as much of the template below as you're able.
 Node version: the output of `node -v`
 NPM/Yarn version: output of `npm -v` or `yarn -v`
 Platform: the output of `uname -a` (UNIX), or version and 32 or 64-bit (Windows) (output of `winver` is very much appreciated!)
-lib-name version: which version of this library are you using (take a look at your `package.json`)
+ci-info-next version: which version of this library are you using (take a look at your `package.json`)
 -->
 
 * **Node version**:
 * **NPM/Yarn version**:
 * **Platform**:
-* **lib-name version**:
+* **ci-info-next version**:
 
 # Issue description
 <!-- Describe here your problem. -->
@@ -114,15 +114,15 @@ Moreover, if you're stuck, don't hesitate to ask for directions from the communi
 Now it's time to bring *your fork* from the cloud to your local computer: the process of bringing your repository from the cloud to your PC is called **clone** and the fastest way of doing this is using the following command (you need to type this in your terminal):
 
 ```sh
-$ git clone https://github.com/<your_github_username>/lib-name
-$ cd lib-name
+$ git clone https://github.com/<your_github_username>/ci-info-next
+$ cd ci-info-next
 ```
 
 Now you are inside your local repository, almost ready to make your changes.
 To keep your fork updated, you should add a *"link"* to the original repository:
 
 ```sh
-$ git remote add upstream https://github.com/niktekusho/lib-name
+$ git remote add upstream https://github.com/niktekusho/ci-info-next
 ```
 
 Now you need to install the dependencies of this project:
