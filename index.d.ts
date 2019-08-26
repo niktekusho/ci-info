@@ -20,14 +20,14 @@ export namespace CiInfo {
 		 * @returns `true` if the current environment variables suggests that this vendor **could** be the one in use.
 		 * @throws TypeError if the specified envs argument is not of type `'object'`.
 		 */
-		detectEnvFunction: (envs?: NodeJS.ProcessEnv) => boolean,
+		detectEnvFunction: (envs: NodeJS.ProcessEnv) => boolean,
 		/**
 		 * Function that check if the specified environment variables matches this vendor's required environment variables for Pull Requests.
 		 *
 		 * @returns `true` if the current environment variables suggests that this vendor **could** be the one in use. This function returns `null` if the vendor does not provide a reliable way to check for a PR environment.
 		 * @throws TypeError if the specified envs argument is not of type `'object'`.
 		 */
-		detectPRFunction: (envs?: NodeJS.ProcessEnv) => boolean | null,
+		detectPRFunction: (envs: NodeJS.ProcessEnv) => boolean | null,
 	}
 }
 
