@@ -2,7 +2,7 @@
 
 <!-- ![](https://img.shields.io/github/license/niktekusho/ci-info-next.svg) [![](https://img.shields.io/npm/v/ci-info-next.svg)](https://www.npmjs.com/package/ci-info-next) [![Build Status](https://travis-ci.org/niktekusho/ci-info-next.svg?branch=master)](https://travis-ci.org/niktekusho/ci-info-next) [![](https://img.shields.io/node/v/ci-info-next.svg)](https://www.npmjs.com/package/ci-info-next) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Maintainability](https://api.codeclimate.com/v1/badges/744538fb7227c1a86bea/maintainability)](https://codeclimate.com/github/niktekusho/ci-info-next/maintainability) [![](https://img.shields.io/bundlephobia/minzip/ci-info-next.svg)](https://bundlephobia.com/result?p=ci-info-next) -->
 
-> Get details of the current CI environment. Heavily inspired by https://github.com/watson/ci-info-next
+> Get details of the current CI environment. This library is heavily inspired by https://github.com/watson/ci-info.
 
 ## Installation
 
@@ -24,34 +24,34 @@ $ yarn add ci-info-next
 
 The library exports the following API:
 
--   function `detectVendor`: get an array of possible CI vendors based on the defined enviornment variables;
+-   function `detectVendor`: get an array of possible CI vendors based on the defined environment variables;
 
     ```js
-  // process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
-const {detectVendor} = require('@niktekusho/ci-info');
+    // process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
+    const {detectVendor} = require('@niktekusho/ci-info');
 
-console.log(detectVendor()); // Logs: ['TRAVIS']
+    console.log(detectVendor()); // Logs: ['TRAVIS']
     ```
 
 -   function `isCI`: detect if the current environment is running on a Continuous Integration service;
 
     ```js
-// On your PC
-const {isCI} = require('@niktekusho/ci-info');
+    // On your PC
+    const {isCI} = require('@niktekusho/ci-info');
 
-console.log(isCI()); // Logs: false
+    console.log(isCI()); // Logs: false
 
-// On a CI service...
-console.log(isCI()); // Logs: true
+    // On a CI service...
+    console.log(isCI()); // Logs: true
     ```
 
 -   function `isPR`: detect if the current environment is running on Pull Request build within a Continuous Integration service;
 
     ```js
-// process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
-const {isPR} = require('@niktekusho/ci-info');
+    // process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
+    const {isPR} = require('@niktekusho/ci-info');
 
-console.log(isPR()); // Logs: true
+    console.log(isPR()); // Logs: true
     ```
 
 - object `vendors`: containing the supported CI services.
@@ -97,25 +97,24 @@ Pretty-printable name of the CI Vendor, for example `'Travis CI'`.
 
 #### constant
 
-Internal "id" of the CI Vendor. This library enforces an uppercased format, for example `'TRAVIS'`.
+This property is an internal "id" of the CI Vendor. This library enforces an uppercased format, for example `'TRAVIS'`.
 
-#### detectEnvFunction(envs?)
+#### detectEnvFunction(envs)
 
-Function that checks if the specified environment variables match this vendor's required environment variables.
+This function checks if the specified environment variables match this vendor's required environment variables.
 Returns `true` if the current environment variables suggest that this vendor **could** be the one in use.
-Throws a `TypeError` if the specified envs argument is not of type `'object'`.
+Throws a `TypeError` if the specified `envs` argument is not of type `'object'`.
 
 ##### envs
 
 Type: `object`
-Default: `process.env`
 
 Environment variables object that allows you to override the default process environment.
 
-#### detectPRFunction(envs?)
+#### detectPRFunction(envs)
 
-Function that checks if the specified environment variables match this vendor's required environment variables for Pull Requests.
-Returns `true` if the current environment variables suggests that this vendor **could** be the one in use.
+This function checks if the specified environment variables match this vendor's required environment variables for Pull Requests.
+Returns `true` if the current environment variables suggest that this vendor **could** be the one in use.
 **This function returns `null` if the vendor does not provide a reliable way to check for a PR environment.**
 
 Throws a `TypeError` if the specified envs argument is not of type `'object'`.
@@ -123,7 +122,6 @@ Throws a `TypeError` if the specified envs argument is not of type `'object'`.
 ##### envs
 
 Type: `object`
-Default: `process.env`
 
 Environment variables object that allows you to override the default process environment.
 
@@ -131,22 +129,22 @@ Environment variables object that allows you to override the default process env
 
 Returns: `CIVendor[]`
 
-Tries to detect which vendors match the specfied environment and returns an array of the vendors matching the specifed environment.
+Tries to detect which vendors match the specified environment and returns an array of the vendors matching the specified environment.
 
 #### envs
 
-Type: `object`
+Type: `object`<br>
 Default: `process.env`
 
 Environment variables object that allows you to override the default process environment.
 
 ### isCI(envs?)
 
-Returns whether the specified environment variables suggest a CI environment.
+This function returns whether the specified environment variables suggest a CI environment.
 
 #### envs
 
-Type: `object`
+Type: `object`<br>
 Default: `process.env`
 
 Environment variables object that allows you to override the default process environment.
@@ -157,14 +155,14 @@ Returns whether the specified environment variables suggest a PR build in the CI
 
 #### envs
 
-Type: `object`
+Type: `object`<br>
 Default: `process.env`
 
 Environment variables object that allows you to override the default process environment.
 
 ### vendors
 
-Object that contains all the supported CI vendors, both individually (using the CIVendor#constant property) and collectively (`all` property).
+This object contains all the supported CI vendors, both individually (using the CIVendor.CONSTANT property) and collectively (`all` property).
 
 ## Related
 
