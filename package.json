@@ -1,6 +1,6 @@
 {
     "name": "ci-info-next",
-    "version": "0.0.0",
+    "version": "1.0.0-0",
     "description": "Get details of the current CI environment. Heavily inspired by https://github.com/watson/ci-info-next",
     "main": "index.js",
     "types": "index.d.ts",
