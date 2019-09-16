@@ -120,6 +120,10 @@ export const vendors: {
 	 */
 	DSARI: CiInfo.CIVendor,
 	/**
+	 * [GitHub Actions (https://github.com/features/actions)](https://github.com/features/actions)
+	 */
+	GITHUB: CiInfo.CIVendor,
+	/**
 	 * [GitLab CI (https://about.gitlab.com/product/continuous-integration/)](https://about.gitlab.com/product/continuous-integration/)
 	 */
 	GITLAB: CiInfo.CIVendor,
