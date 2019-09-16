@@ -259,6 +259,29 @@ describe('DSARI tests', () => {
 	});
 });
 
+describe('GitHub Actions tests', () => {
+	const github = vendors.GITHUB;
+
+	it('`detectEnvFunction` should return `false` if the current environment variables do not contain the specific environment', () => {
+		expect(github.detectEnvFunction({SOME_ENV: true})).toStrictEqual(false);
+	});
+
+	it('`detectEnvFunction` should return `true` if the current environment variables contain the specific environment', () => {
+		expect(github.detectEnvFunction({GITHUB_ACTION: 'someAction'})).toStrictEqual(true);
+		expect(github.detectEnvFunction({GITHUB_WORKFLOW: 'some workflow'})).toStrictEqual(true);
+		expect(github.detectEnvFunction({GITHUB_ACTION: 'someAction', GITHUB_WORKFLOW: 'some workflow'})).toStrictEqual(true);
+	});
+
+	it('`detectPRFunction` should return `false` if the current environment variables do not contain the specific environment', () => {
+		expect(github.detectPRFunction({SOME_ENV: false})).toStrictEqual(false);
+	});
+
+	it('`detectPRFunction` should return `true` if the current environment variables contain the required variable set to pull_request', () => {
+		expect(github.detectPRFunction({GITHUB_EVENT_NAME: 'pull_request'})).toStrictEqual(true);
+		expect(github.detectPRFunction({GITHUB_EVENT_NAME: 'test'})).toStrictEqual(false);
+	});
+});
+
 describe('GitLabCI tests', () => {
 	const gitlab = vendors.GITLAB;
 

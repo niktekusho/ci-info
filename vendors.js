@@ -92,6 +92,12 @@ const dsari = new CIVendor({
 	constant: 'DSARI',
 	env: isEnvironmentVariableDefined('DSARI')
 });
+const GitHubActions = new CIVendor({
+	name: 'Github Actions',
+	constant: 'GITHUB',
+	env: areAnyEnvironmentVariablesDefined('GITHUB_ACTION', 'GITHUB_WORKFLOW'),
+	pr: isEnvironmentVariableEqualTo('GITHUB_EVENT_NAME', 'pull_request')
+});
 const GitLabCI = new CIVendor({
 	name: 'GitLab CI',
 	constant: 'GITLAB',
@@ -179,6 +185,7 @@ const vendors = Object.freeze([
 	Codeship,
 	Drone,
 	dsari,
+	GitHubActions,
 	GitLabCI,
 	GoCD,
 	Hudson,

@@ -73,6 +73,7 @@ The library exports the following API:
 | [Codeship](https://codeship.com)                                                | `CODESHIP`        | **No**                |
 | [Drone](https://drone.io)                                                       | `DRONE`           | **Yes**               |
 | [dsari](https://github.com/rfinnie/dsari)                                       | `DSARI`           | **No**                |
+| [GitHub Actions](https://github.com/features/actions)                           | `GITHUB`          | **Yes**               |
 | [GitLab CI](https://about.gitlab.com/product/continuous-integration/)           | `GITLAB`          | **No**                |
 | [GoCD](https://www.gocd.org/)                                                   | `GOCD`            | **No**                |
 | [Hudson](http://hudson-ci.org)                                                  | `HUDSON`          | **No**                |
