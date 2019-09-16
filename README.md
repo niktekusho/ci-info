@@ -28,7 +28,7 @@ The library exports the following API:
 
     ```js
     // process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
-    const {detectVendor} = require('@niktekusho/ci-info');
+    const {detectVendor} = require('ci-info-next');
 
     console.log(detectVendor()); // Logs: ['TRAVIS']
     ```
@@ -37,7 +37,7 @@ The library exports the following API:
 
     ```js
     // On your PC
-    const {isCI} = require('@niktekusho/ci-info');
+    const {isCI} = require('ci-info-next');
 
     console.log(isCI()); // Logs: false
 
@@ -49,7 +49,7 @@ The library exports the following API:
 
     ```js
     // process.env: TRAVIS='',TRAVIS_PULL_REQUEST=''
-    const {isPR} = require('@niktekusho/ci-info');
+    const {isPR} = require('ci-info-next');
 
     console.log(isPR()); // Logs: true
     ```
@@ -163,7 +163,7 @@ Environment variables object that allows you to override the default process env
 
 ### vendors
 
-This object contains all the supported CI vendors, both individually (using the CIVendor.CONSTANT property) and collectively (`all` property).
+This object contains all the supported CI vendors, both individually (using the `CIVendor[CONSTANT]` property) and collectively (`all` property).
 
 ## Related
 
