@@ -84,9 +84,9 @@ describe('vendors tests', () => {
 describe('CI tests', () => {
 	const {detectVendor, isCI} = ciInfo;
 
-	it('should detect Travis CI', () => {
+	it('should detect GitHub Actions', () => {
 		if (isCI()) {
-			expect(detectVendor()[0].constant).toStrictEqual('TRAVIS');
+			expect(detectVendor()[0].constant).toStrictEqual('GITHUB');
 		}
 	});
 });
