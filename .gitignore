@@ -125,6 +125,12 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Yarn lock file
+yarn.lock
+
+# npm lock file
+package-lock.json
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
