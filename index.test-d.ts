@@ -1,9 +1,9 @@
-import {expectType} from 'tsd';
+import { expectType } from 'tsd';
 import * as ciInfo from '.';
 
-expectType<Function>(ciInfo.detectVendor);
-expectType<Function>(ciInfo.isCI);
-expectType<Function>(ciInfo.isPR);
+expectType<(envs?: NodeJS.ProcessEnv) => ciInfo.CiInfo.CIVendor[]>(ciInfo.detectVendor);
+expectType<(envs?: NodeJS.ProcessEnv) => boolean>(ciInfo.isCI);
+expectType<(envs?: NodeJS.ProcessEnv) => boolean>(ciInfo.isPR);
 
 expectType<ciInfo.CiInfo.CIVendor[]>(ciInfo.vendors.all);
 
