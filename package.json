@@ -13,14 +13,14 @@
         "vendors.js"
     ],
     "dependencies": {
-        "@types/node": "8"
+        "@types/node": "^8"
     },
     "devDependencies": {
         "@types/jest": "^24.0.17",
         "jest": "^24.8.0",
         "np": "^5.0.3",
-        "tsd": "^0.7.3",
-        "xo": "^0.24.0"
+        "tsd": "^0.11.0",
+        "xo": "^0.25.3"
     },
     "engines": {
         "node": ">=8"
